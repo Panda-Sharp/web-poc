@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/Core/">
+    <Project Path="Web.Poc.Application.Contracts/Web.Poc.Application.Contracts.csproj" Id="ea12a946-f23f-4eb9-8923-1762117a3dbb" />
+    <Project Path="Web.Poc.Application/Web.Poc.Application.csproj" Id="bdae415e-d19e-4e39-99e9-be00be45b776" />
+    <Project Path="Web.Poc.Domain.Shared/Web.Poc.Domain.Shared.csproj" Id="03537f89-f6b8-4e63-9488-637c87bb279d" />
+    <Project Path="Web.Poc.Domain/Web.Poc.Domain.csproj" Id="9014b8a4-783f-4ab4-946a-ff6f962ad471" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Web.Poc.Infrastructure/Web.Poc.Infrastructure.csproj" Id="d217d863-f6c8-4392-9e4c-ee4713b4cd24" />
+    <Project Path="Web.Poc.Persistence/Web.Poc.Persistence.csproj" Id="dc373223-6e47-4c7d-a51a-14a213330e4e" />
+  </Folder>
+  <Folder Name="/Presentation/">
+    <Project Path="Web.Poc.WorkerService.Client/Web.Poc.WorkerService.Client.csproj" Id="4c7fab93-5414-491e-aefa-01f4182453d9" />
+    <Project Path="Web.Poc.WorkerService.Server/Web.Poc.WorkerService.Server.csproj" Id="d0bf8a41-6ca5-492d-8817-abc542008b68" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Web.Poc.Infrastructure.UnitTests/Web.Poc.Infrastructure.UnitTests.csproj" Id="0ee277ef-b17f-4876-8730-ef5bd78335e6" />
+  </Folder>
+</Solution>
