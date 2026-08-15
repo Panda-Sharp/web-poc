@@ -2,5 +2,5 @@
 
 public interface IUrl
 {
-    Task ShowUrl(string url);
+	Task AddUrls(IEnumerable<string> urls);
 }

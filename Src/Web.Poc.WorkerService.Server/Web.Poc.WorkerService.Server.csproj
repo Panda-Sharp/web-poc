@@ -6,6 +6,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Bogus" Version="35.6.5" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\Web.Poc.Application.Contracts\Web.Poc.Application.Contracts.csproj" />
 	</ItemGroup>
 
