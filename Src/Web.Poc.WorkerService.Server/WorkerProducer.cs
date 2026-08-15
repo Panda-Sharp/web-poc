@@ -10,6 +10,12 @@ namespace Web.Poc.WorkerService.Server;
 
 public class WorkerProducer : BackgroundService
 {
+    private static readonly string[] Urls =
+    [
+        "https://github.com/Panda-Sharp/web-poc",
+        "https://raw.githubusercontent.com/reactiveui/refit/main/images/logo.png"
+    ];
+
     private readonly IHubContext<UrlHub, IUrl> _clockHub;
     private readonly ILogger<WorkerProducer> _logger;
 
@@ -30,7 +36,12 @@ public class WorkerProducer : BackgroundService
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             }
 
-            await _clockHub.Clients.All.ShowUrl(DateTime.Now.ToString());
+            foreach (var url in Urls)
+            {
+                await _clockHub.Clients.All.ShowUrl(url); // DateTime.Now
+                await Task.Delay(1000, cancellationToken);
+            }
+
             await Task.Delay(1000, cancellationToken);
         }
     }

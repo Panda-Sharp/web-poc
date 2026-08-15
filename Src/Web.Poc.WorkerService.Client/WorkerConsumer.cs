@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Web.Poc.Application.Contracts;
@@ -10,11 +9,15 @@ namespace Web.Poc.WorkerService.Client;
 
 public class WorkerConsumer : BackgroundService, IUrl
 {
+    private readonly IUrlDowloadService _urlDowloadService;
     private readonly ILogger<WorkerConsumer> _logger;
-    private HubConnection _connection;
+    private readonly HubConnection _connection;
 
-    public WorkerConsumer(ILogger<WorkerConsumer> logger)
+    public WorkerConsumer(
+        IUrlDowloadService urlDowloadService,
+        ILogger<WorkerConsumer> logger)
     {
+        _urlDowloadService = urlDowloadService;
         _logger = logger;
 
         _connection = new HubConnectionBuilder()
@@ -41,10 +44,10 @@ public class WorkerConsumer : BackgroundService, IUrl
         }
     }
 
-    public Task ShowUrl(string url)
+    public async Task ShowUrl(string url)
     {
-        _logger.LogInformation("{url}", url);
+        _logger.LogInformation("{url}", url); // DateTime.Now
 
-        return Task.CompletedTask;
+        await _urlDowloadService.DownloaFile(url);
     }
 }
