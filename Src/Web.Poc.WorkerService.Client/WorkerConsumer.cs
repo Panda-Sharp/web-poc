@@ -80,6 +80,8 @@ public class WorkerConsumer : BackgroundService, IUrl
 				// IsCompleted check but before we call Take.
 				// In this example, we can simply catch the exception since the
 				// loop will break on the next iteration.
+
+				//_urlBlockingCollection.GetConsumingEnumerable();
 				while (!_urlDownloadBlockingCollection.IsCompleted)
 				{
 					_urlDownloadBlockingCollection.TryTake(out var uri);
