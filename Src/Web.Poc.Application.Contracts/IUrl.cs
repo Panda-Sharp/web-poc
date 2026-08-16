@@ -1,6 +1,9 @@
-﻿namespace Web.Poc.Application.Contracts;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace Web.Poc.Application.Contracts;
 
 public interface IUrl
 {
-	Task AddUrls(IEnumerable<string> urls);
+	Task OnAddUrls(IEnumerable<string> urls);
 }

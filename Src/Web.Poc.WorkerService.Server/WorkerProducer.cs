@@ -41,7 +41,7 @@ public class WorkerProducer : BackgroundService
 				var urls = Enumerable.Range(1, 5)
 				  .Select(_ => faker.Internet.UrlWithPath());
 
-				await _clockHub.Clients.All.AddUrls(urls); // DateTime.Now
+				await _clockHub.Clients.All.OnAddUrls(urls); // DateTime.Now
 				await Task.Delay(1000, cancellationToken);
 			}
 		}

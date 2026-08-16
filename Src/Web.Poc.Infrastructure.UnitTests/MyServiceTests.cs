@@ -6,8 +6,8 @@ namespace Web.Poc.Infrastructure.UnitTests;
 [TestClass]
 public sealed class MyServiceTests
 {
-    [TestMethod]
-    public async Task MyMethodTestAsync()
-    {
-    }
+	[TestMethod]
+	public async Task MyMethodTestAsync()
+	{
+	}
 }
