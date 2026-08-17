@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Launch Consumer and Producer",
+    "Projects": [
+      {
+        "Path": "Web.Poc.WorkerService.Consumer\\Web.Poc.WorkerService.Consumer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Web.Poc.WorkerService.Producer\\Web.Poc.WorkerService.Producer.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

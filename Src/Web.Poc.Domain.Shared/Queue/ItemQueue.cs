@@ -11,15 +11,6 @@ public class ItemQueue<T> : IItemQueue<T> where T : class
 
 	public int Count => _channel.Reader.Count;
 
-	public ItemQueue(int capacity)
-	{
-		BoundedChannelOptions options = new(capacity)
-		{
-			FullMode = BoundedChannelFullMode.Wait
-		};
-		_channel = Channel.CreateBounded<T>(options);
-	}
-
 	public ItemQueue()
 	{
 		_channel = Channel.CreateUnbounded<T>();
@@ -34,10 +25,24 @@ public class ItemQueue<T> : IItemQueue<T> where T : class
 		await _channel.Writer.WriteAsync(item, cancellationToken);
 	}
 
-	public async ValueTask<T?> DequeueAsync(CancellationToken cancellationToken)
+	public async ValueTask<T?> DequeueAsync(
+		CancellationToken cancellationToken)
 	{
 		var item = await _channel.Reader.ReadAsync(cancellationToken);
 
 		return item;
+	}
+
+	public bool TryQueueAsync(
+		T item)
+	{
+		ArgumentNullException.ThrowIfNull(item);
+
+		return _channel.Writer.TryWrite(item);
+	}
+
+	public bool TryDequeueAsync(out T? item)
+	{
+		return _channel.Reader.TryRead(out item);
 	}
 }

@@ -1,0 +1,210 @@
+url,category_code,category_description,date_added,source,notes
+http://gateway.ipfs.io/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://www.referendum.party/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://alerta.cat/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://referendum.pau.fm/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://www.ref1oct.cat/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://referendum.cat/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://ref1oct.cat/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+http://www.marianorajoy.cat/,POLR,Political Criticism,2017-09-25,user contribution,referendum in Catalonia
+https://eu.wikipedia.org/,CULTR,Culture,2018-07-06,Wikimedia,URLs provided by wikipedia based on the most popular language domains per country
+https://gl.wikipedia.org/,CULTR,Culture,2018-07-06,Wikimedia,URLs provided by wikipedia based on the most popular language domains per country
+https://tsunamidemocratic.cat/,POLR,Political Criticism,2019-10-21,user contribution,Protests in Catalonia against jail sentence for governing politicians during referendum
+https://app.tsunamidemocratic.cat/,POLR,Political Criticism,2019-10-21,user contribution,Protests in Catalonia against jail sentence for governing politicians during referendum
+https://tsunamidemocratic.net/,POLR,Political Criticism,2019-10-21,user contribution,Protests in Catalonia against jail sentence for governing politicians during referendum
+https://tsunamidemocratic.com/,POLR,Political Criticism,2019-10-21,user contribution,Protests in Catalonia against jail sentence for governing politicians during referendum
+https://tsunamidemocratic.github.io/,POLR,Political Criticism,2019-10-21,user contribution,Protests in Catalonia against jail sentence for governing politicians during referendum
+https://lesbicanarias.es/,LGBT,LGBT,2019-11-18,OutRight International,
+http://www.elitegoles.com/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://elitegoltv.me/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://veopartidos.online/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.elitegol.tv/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.elitegoltv.org/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.elitegol.global/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://redstreamsport.online/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.pirlotvhd.online/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.pirlotvhd.net/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.pirlotv.es/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.pirlotvonline.net/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://futbolpirlotv.net/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.intergoles.me/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.intergoles.net/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.mamahd.org/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.rojadirectaenvivo.es/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://iptvesp.eu/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.sansat.net:25461/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://iptvtool.es:9977/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://landiptv.live:8080/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://movspain.com:25461/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://c14.xtra7.gq:26659/,FILE,File-sharing,2020-02-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.todocvcd.com/,FILE,File-sharing,2020-04-03,User contribution,Just found one unlisted blocked site.
+https://www.todocvcd.co/,FILE,File-sharing,2020-04-03,User contribution,Just found one unlisted blocked site.
+https://comoabortar.org/,XED,Sex Education,2020-05-20,OONI,Reportedly blocked
+https://actualidad.rt.com/,NEWS,News Media,2023-04-20,OONI,blocked russian media
+https://esrt.online/,NEWS,News Media,2023-04-20,OONI,mirror of actualidad.rt.com
+https://sputniknews.lat/,NEWS,News Media,2023-04-24,test-lists.ooni.org contribution,
+https://epublibre.org/,FILE,File-sharing,2024-09-17,test-lists.ooni.org contribution,"books via torrent: comercial editions, amateur translations, public domain books"
+https://www.acestream.org/,MMED,Media sharing,2024-09-17,test-lists.ooni.org contribution,Website of a p2p mutliplatform app to create and share video streams. Already blocked
+https://www.infolibre.es/,NEWS,News Media,2025-09-03,test-lists.ooni.org contribution,
+https://www.rtve.es/,NEWS,News Media,2025-09-03,test-lists.ooni.org contribution,
+https://ciberisciii.es/,PUBH,Public Health,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage.
+https://estudyme.com/study/,CULTR,Culture,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage.
+https://www.rae.es/,GOVT,Government,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage.
+https://lenguajehtml.com/,CULTR,Culture,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage.
+https://ciudadreal.com/,GOVT,Government,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage.
+https://bandaancha.eu/,NEWS,News Media,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage. Critic with the blocks and provides info about them.
+https://twitch.tv/,GAME,Gaming,2025-12-13,test-lists.ooni.org contribution,LaLiga shutdowns to prevent illegal retransmision of football matches. Collateral damage. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://forocoches.com/foro/,COMT,Communication Tools,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage. Critic with the blocks and provides info about them.
+https://www.cantabriadiario.com/,NEWS,News Media,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage. Critic with the blocks and provides info about them.
+https://tebas.tv/,HOST,Hosting and Blogging Platforms,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage. Critic with the blocks and provides info about them.
+https://hayahora.futbol/,HOST,Hosting and Blogging Platforms,2025-12-13,test-lists.ooni.org contribution,Cloudflare shutdowns to prevent football pirating. Collateral damage. Legal webpage. Critic with the blocks and provides info about them.
+https://www.naranjaslola.com/,COMM,E-commerce,2025-12-13,test-lists.ooni.org contribution,Shutdowns to AS16371 as collateral damage. Legal webpage with no relation to football pirating. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://lapichangita.sport.blog/,MMED,Media sharing,2025-12-03,test-lists.ooni.org contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.carles.cat/,CULTR,Culture,2025-12-03,test-lists.ooni.org contribution,
+https://www.sectorgaming.tv/,NEWS,News Media,2025-12-03,test-lists.ooni.org contribution,
+https://www.goalsport.info/,MMED,Media sharing,2025-11-28,test-lists.ooni.org contribution,football streaming site
+https://rojadirectahd.my/,MMED,Media sharing,2025-11-28,test-lists.ooni.org contribution,football streaming site
+https://rojadirectatv.global/,MMED,Media sharing,2025-11-28,test-lists.ooni.org contribution,football streaming site
+https://3ds.redsys.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://doc.samsungmobile.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.kelme.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.ciberisciii.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.crowdstrike.de/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://video-edge-234aaa.mad02.abs.hls.ttvnw.net/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://chollo.to/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://kmv.to/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.valenciacf.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.rtvce.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.expovacaciones.eu/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.gicp.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+http://www.meneame.net/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.miravia.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.wimeo.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.canonrumors.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.instructables.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.cadizdirecto.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://wutheringwaves.kurogames.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://comunidad.enfermeriaformacion.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.sageonena.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.theretroweb.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.pocketbook.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.jsabina.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.zeekr.eu/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.royborland.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.vitux.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://api.prizepicks.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://apiv2.klmburst.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://api.efortuna.pl/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.facilitiesdive.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.sconde.net/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.ipcost.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.9to5linux.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.entsoe.eu/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.japonismo.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.zapeat.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.microsofters.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.imgbb.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.grpc.io/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.alexhyett.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.steamgriddb.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mantaspersonalizadas.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.lenguajejs.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.cookieconsent.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.conda.io/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.reflot.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.esphome.io/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.xbdeals.net/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.playmax.mx/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.qbittorrent.org/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mediterraneodigital.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.nebulahosting.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.eneba.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mediavida.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.nosololinux.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.passager.app/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.furgocamperespana.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.check-host.net/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.myhordes.eu/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.9laloma.tv/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://educacion.segu-info.com.ar/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mubis.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.tdtchannels.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.canyoublockit.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://cobalt.tools/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.minebox.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.poelab.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.terminaldelinux.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.lenguajehtml.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://api.extendedclip.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.inoxart.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.play2048.co/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.yepi.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.juegosagogo.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://l3x.net.redp.icu/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://ludere.dev/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://nanoleaf.me/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.material-tailwind.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.dolarhoy.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.aboca.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.online-calculator.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.sprunki-incredibox.org/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mprep.info/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.ublockorigin.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.beonesec.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.snapdrop.net/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.webcamtests.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mictests.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.altertime.es/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.reverseimagesearch.org/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.cybersecuritynews.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.playpaste.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.mvnrepository.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.tropela.eus/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.skycards.app/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://www.dnsperf.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://qr.gourmeatsapp.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://linuxmint.com/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://caritas.org/,FILE,File-sharing,2025-11-23,User contribution,Sport streaming sites block. Initiative of TELEFONICA AUDIOVISUAL DIGITAL SL.
+https://cloudflarestream.com/,MMED,Media sharing,2026-05-07,User contribution,Cloudflare video streaming and media delivery platform
+https://como.gov/,GOVT,Government,2026-05-07,User contribution,Official government website for City of Columbia Missouri
+https://thornlighting-architectural.com/,COMM,E-commerce,2026-05-07,User contribution,Commercial architectural lighting products website
+https://southridingmoderndentistry.com/,COMM,E-commerce,2026-05-07,User contribution,Dental clinic and healthcare services website
+https://skillshare.com/,CULTR,Culture,2026-05-07,User contribution,Online learning and creative education platform
+https://dysongpt.dyson.com/,COMM,E-commerce,2026-05-07,User contribution,Dyson branded AI assistant and customer support platform
+https://govern.cat/,GOVT,Government,2026-05-07,User contribution,Official Catalan government website
+https://ararteko.eus/,HUMR,Human Rights Issues,2026-05-07,User contribution,Basque Ombudsman and human rights institution
+https://innobasque.eus/,GOVT,Government,2026-05-07,User contribution,Basque regional innovation agency
+https://tabakalera.eus/,CULTR,Culture,2026-05-07,User contribution,Major Basque cultural center in San Sebastián
+https://fundeu.es/,CULTR,Culture,2026-05-07,User contribution,Prestigious Spanish language authority backed by RAE and AP
+https://mcdonalds.es/,COMM,E-commerce,2026-05-07,User contribution,Major commercial brand website
+https://al-islam.org/,REL,Religion,2026-05-07,User contribution,Major Islamic religious reference site
+https://cibercuba.com/,NEWS,News Media,2026-05-07,User contribution,Cuban diaspora and independent media outlet
+https://cordobahoy.es/,NEWS,News Media,2026-05-07,User contribution,Regional Spanish news outlet
+https://cronicaluz.es/,NEWS,News Media,2026-05-07,User contribution,Regional Spanish news outlet
+https://energynews.es/,NEWS,News Media,2026-05-07,User contribution,Energy and policy news outlet
+https://senate.gov.ph/,GOVT,Government,2026-05-07,User contribution,Official Philippine Senate website
+https://regulation.gov.ua/,GOVT,Government,2026-05-07,User contribution,Ukrainian government regulatory body
+https://elections.gov.mv/,GOVT,Government,2026-05-07,User contribution,Maldives elections authority
+https://fesp-ugtandalucia.org/,HUMR,Human Rights Issues,2026-05-07,User contribution,Major Spanish trade union federation
+https://referendum.cat/,POLR,Political Criticism,2026-05-07,User contribution,Catalan independence referendum political site
+https://amnesty.ie/,HUMR,Human Rights Issues,2026-05-07,User contribution,Amnesty International Ireland
+https://amnestynews.de/,HUMR,Human Rights Issues,2026-05-07,User contribution,Amnesty International Germany news site
+https://amnesty.org.au/,HUMR,Human Rights Issues,2026-05-07,User contribution,Amnesty International Australia
+https://opusdei.es/,REL,Religion,2026-05-07,User contribution,Official Opus Dei religious institution
+https://islamic-relief.com/,HUMR,Human Rights Issues,2026-05-07,User contribution,Major international humanitarian NGO
+https://politikon.es/,POLR,Political Criticism,2026-05-07,User contribution,Spanish political analysis outlet
+https://human-rights-for-all.org/,HUMR,Human Rights Issues,2026-05-07,User contribution,Human rights advocacy organization
+https://mercycorps.org.uk/,HUMR,Human Rights Issues,2026-05-07,User contribution,International humanitarian aid organization
+https://caritas.lt/,REL,Religion,2026-05-07,User contribution,Catholic charity network in Lithuania
+https://caritas.org.ar/,REL,Religion,2026-05-07,User contribution,Catholic charity network in Argentina
+https://greenpeace.org.ar/,ENV,Environment,2026-05-07,User contribution,Greenpeace environmental organization Argentina
+https://islamophobia-watch.com/,HUMR,Human Rights Issues,2026-05-07,User contribution,Religious discrimination and civil society watchdog
+https://diocese-braga.pt/,REL,Religion,2026-05-07,User contribution,Catholic diocese in Portugal
+https://tribunale.bergamo.it/,GOVT,Government,2026-05-07,User contribution,Italian judicial and court institution
+https://politican.es/,POLR,Political Criticism,2026-05-07,User contribution,Spanish political news and commentary site
+https://freerussia.eu/,POLR,Political Criticism,2026-05-07,User contribution,Anti-Putin activism and opposition organization
+https://4freerussia.org/,POLR,Political Criticism,2026-05-07,User contribution,Free Russia political activism organization
+https://uacrisis.org/,POLR,Political Criticism,2026-05-07,User contribution,Ukraine crisis monitoring and political analysis site
+https://senate.gov.au/,GOVT,Government,2026-05-07,User contribution,Official Australian Senate website
+https://kalshi.com/,GMB,Gambling,2026-05-26,test-lists.ooni.org contribution,Recently ordered to be blocked by authorities 2026-05-26 – CSL
+https://polymarket.com/,GMB,Gambling,2026-05-26,test-lists.ooni.org contribution,Recently ordered to be blocked by authorities 2026-05-26 – CSL

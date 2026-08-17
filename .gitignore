@@ -428,4 +428,4 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-/Src/Web.Poc.WorkerService.Client/Downloads
+/Src/Web.Poc.WorkerService.Consumer/Downloads

@@ -16,10 +16,15 @@ public class TaskQueue : ITaskQueue
 	//private readonly BlockingCollection<Uri> _urlBlockingCollection = [];
 	//private readonly BlockingCollection<Uri> _urlDownloadBlockingCollection = new(10);
 
+	public int Capacity { get; }
+
 	public int Count => _channel.Reader.Count;
+
+	public bool IsFull => Count >= Capacity;
 
 	public TaskQueue(int capacity)
 	{
+		Capacity = capacity;
 		BoundedChannelOptions options = new(capacity)
 		{
 			FullMode = BoundedChannelFullMode.Wait
@@ -27,14 +32,9 @@ public class TaskQueue : ITaskQueue
 		_channel = Channel.CreateBounded<Func<CancellationToken, ValueTask>>(options);
 	}
 
-	public TaskQueue()
-	{
-		_channel = Channel.CreateUnbounded<Func<CancellationToken, ValueTask>>();
-	}
-
 	public async ValueTask QueueAsync(
-			Func<CancellationToken, ValueTask> item,
-			CancellationToken cancellationToken)
+		Func<CancellationToken, ValueTask> item,
+		CancellationToken cancellationToken)
 	{
 		ArgumentNullException.ThrowIfNull(item);
 
@@ -48,5 +48,18 @@ public class TaskQueue : ITaskQueue
 			await _channel.Reader.ReadAsync(cancellationToken);
 
 		return item;
+	}
+
+	public bool TryQueueAsync(
+		Func<CancellationToken, ValueTask> item)
+	{
+		ArgumentNullException.ThrowIfNull(item);
+
+		return _channel.Writer.TryWrite(item);
+	}
+
+	public bool TryDequeueAsync(out Func<CancellationToken, ValueTask>? item)
+	{
+		return _channel.Reader.TryRead(out item);
 	}
 }
