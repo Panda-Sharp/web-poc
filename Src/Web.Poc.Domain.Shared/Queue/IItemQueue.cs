@@ -5,13 +5,13 @@ namespace Web.Poc.Domain.Shared.Queue;
 
 public interface IItemQueue<T> where T : class
 {
-	int Count { get; }
+    int Count { get; }
 
-	ValueTask QueueAsync(T message, CancellationToken cancellationToken);
+    ValueTask QueueAsync(T message, CancellationToken cancellationToken);
 
-	ValueTask<T?> DequeueAsync(CancellationToken cancellationToken);
+    ValueTask<T?> DequeueAsync(CancellationToken cancellationToken);
 
-	bool TryQueueAsync(T item);
+    bool TryQueueAsync(T item);
 
-	bool TryDequeueAsync(out T? item);
+    bool TryDequeueAsync(out T? item);
 }

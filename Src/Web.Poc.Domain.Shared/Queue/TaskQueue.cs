@@ -11,55 +11,55 @@ namespace Web.Poc.Domain.Shared.Queue;
 // https://learn.microsoft.com/en-us/dotnet/core/extensions/queue-service
 public class TaskQueue : ITaskQueue
 {
-	private readonly Channel<Func<CancellationToken, ValueTask>> _channel;
+    private readonly Channel<Func<CancellationToken, ValueTask>> _channel;
 
-	//private readonly BlockingCollection<Uri> _urlBlockingCollection = [];
-	//private readonly BlockingCollection<Uri> _urlDownloadBlockingCollection = new(10);
+    //private readonly BlockingCollection<Uri> _urlBlockingCollection = [];
+    //private readonly BlockingCollection<Uri> _urlDownloadBlockingCollection = new(10);
 
-	public int Capacity { get; }
+    public int Capacity { get; }
 
-	public int Count => _channel.Reader.Count;
+    public int Count => _channel.Reader.Count;
 
-	public bool IsFull => Count >= Capacity;
+    public bool IsFull => Count >= Capacity;
 
-	public TaskQueue(int capacity)
-	{
-		Capacity = capacity;
-		BoundedChannelOptions options = new(capacity)
-		{
-			FullMode = BoundedChannelFullMode.Wait
-		};
-		_channel = Channel.CreateBounded<Func<CancellationToken, ValueTask>>(options);
-	}
+    public TaskQueue(int capacity)
+    {
+        Capacity = capacity;
+        BoundedChannelOptions options = new(capacity)
+        {
+            FullMode = BoundedChannelFullMode.Wait
+        };
+        _channel = Channel.CreateBounded<Func<CancellationToken, ValueTask>>(options);
+    }
 
-	public async ValueTask QueueAsync(
-		Func<CancellationToken, ValueTask> item,
-		CancellationToken cancellationToken)
-	{
-		ArgumentNullException.ThrowIfNull(item);
+    public async ValueTask QueueAsync(
+        Func<CancellationToken, ValueTask> item,
+        CancellationToken cancellationToken)
+    {
+        ArgumentNullException.ThrowIfNull(item);
 
-		await _channel.Writer.WriteAsync(item, cancellationToken);
-	}
+        await _channel.Writer.WriteAsync(item, cancellationToken);
+    }
 
-	public async ValueTask<Func<CancellationToken, ValueTask>> DequeueAsync(
-		CancellationToken cancellationToken)
-	{
-		Func<CancellationToken, ValueTask>? item =
-			await _channel.Reader.ReadAsync(cancellationToken);
+    public async ValueTask<Func<CancellationToken, ValueTask>> DequeueAsync(
+        CancellationToken cancellationToken)
+    {
+        Func<CancellationToken, ValueTask>? item =
+            await _channel.Reader.ReadAsync(cancellationToken);
 
-		return item;
-	}
+        return item;
+    }
 
-	public bool TryQueueAsync(
-		Func<CancellationToken, ValueTask> item)
-	{
-		ArgumentNullException.ThrowIfNull(item);
+    public bool TryQueueAsync(
+        Func<CancellationToken, ValueTask> item)
+    {
+        ArgumentNullException.ThrowIfNull(item);
 
-		return _channel.Writer.TryWrite(item);
-	}
+        return _channel.Writer.TryWrite(item);
+    }
 
-	public bool TryDequeueAsync(out Func<CancellationToken, ValueTask>? item)
-	{
-		return _channel.Reader.TryRead(out item);
-	}
+    public bool TryDequeueAsync(out Func<CancellationToken, ValueTask>? item)
+    {
+        return _channel.Reader.TryRead(out item);
+    }
 }

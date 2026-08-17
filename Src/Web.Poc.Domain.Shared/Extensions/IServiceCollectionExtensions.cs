@@ -6,14 +6,14 @@ namespace Web.Poc.Domain.Shared.Extensions;
 
 public static class IServiceCollectionExtensions
 {
-	public static void AddTaskQueue(this IServiceCollection services, IConfiguration configuration)
-	{
-		if (!int.TryParse(configuration["QueueCapacity"], out var queueCapacity))
-		{
-			queueCapacity = 100;
-		}
+    public static void AddTaskQueue(this IServiceCollection services, IConfiguration configuration)
+    {
+        if (!int.TryParse(configuration["QueueCapacity"], out var queueCapacity))
+        {
+            queueCapacity = 100;
+        }
 
-		services
-			.AddSingleton<ITaskQueue>( _ => new TaskQueue(queueCapacity));
-	}
+        services
+            .AddSingleton<ITaskQueue>(_ => new TaskQueue(queueCapacity));
+    }
 }

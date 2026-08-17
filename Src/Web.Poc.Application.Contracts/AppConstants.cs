@@ -2,7 +2,9 @@
 
 public static class AppConstants
 {
-	public static string HubUrl => "https://localhost:5001/hubs/clock";
+    public static string HubConsumerUrl => $"https://localhost:5001{HubProducerUrl}";
 
-	public static string UrlSentEvent => nameof(IUrl.OnAddUrls);
+    public static string HubProducerUrl => "/hubs/url";
+
+    public static string UrlSentEvent => nameof(IUrl.OnAddUrls);
 }

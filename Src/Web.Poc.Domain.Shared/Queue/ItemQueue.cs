@@ -7,42 +7,42 @@ namespace Web.Poc.Domain.Shared.Queue;
 
 public class ItemQueue<T> : IItemQueue<T> where T : class
 {
-	private readonly Channel<T> _channel;
+    private readonly Channel<T> _channel;
 
-	public int Count => _channel.Reader.Count;
+    public int Count => _channel.Reader.Count;
 
-	public ItemQueue()
-	{
-		_channel = Channel.CreateUnbounded<T>();
-	}
+    public ItemQueue()
+    {
+        _channel = Channel.CreateUnbounded<T>();
+    }
 
-	public async ValueTask QueueAsync(
-		T item,
-		CancellationToken cancellationToken)
-	{
-		ArgumentNullException.ThrowIfNull(item);
+    public async ValueTask QueueAsync(
+        T item,
+        CancellationToken cancellationToken)
+    {
+        ArgumentNullException.ThrowIfNull(item);
 
-		await _channel.Writer.WriteAsync(item, cancellationToken);
-	}
+        await _channel.Writer.WriteAsync(item, cancellationToken);
+    }
 
-	public async ValueTask<T?> DequeueAsync(
-		CancellationToken cancellationToken)
-	{
-		var item = await _channel.Reader.ReadAsync(cancellationToken);
+    public async ValueTask<T?> DequeueAsync(
+        CancellationToken cancellationToken)
+    {
+        var item = await _channel.Reader.ReadAsync(cancellationToken);
 
-		return item;
-	}
+        return item;
+    }
 
-	public bool TryQueueAsync(
-		T item)
-	{
-		ArgumentNullException.ThrowIfNull(item);
+    public bool TryQueueAsync(
+        T item)
+    {
+        ArgumentNullException.ThrowIfNull(item);
 
-		return _channel.Writer.TryWrite(item);
-	}
+        return _channel.Writer.TryWrite(item);
+    }
 
-	public bool TryDequeueAsync(out T? item)
-	{
-		return _channel.Reader.TryRead(out item);
-	}
+    public bool TryDequeueAsync(out T? item)
+    {
+        return _channel.Reader.TryRead(out item);
+    }
 }

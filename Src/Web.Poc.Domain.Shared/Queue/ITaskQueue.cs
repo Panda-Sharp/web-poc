@@ -6,17 +6,17 @@ namespace Web.Poc.Domain.Shared.Queue;
 
 public interface ITaskQueue
 {
-	int Capacity { get; }
+    int Capacity { get; }
 
-	int Count { get; }
-	
-	bool IsFull { get; }
+    int Count { get; }
 
-	ValueTask QueueAsync(Func<CancellationToken, ValueTask> item, CancellationToken cancellationToken);
+    bool IsFull { get; }
 
-	ValueTask<Func<CancellationToken, ValueTask>> DequeueAsync(CancellationToken cancellationToken);
-	
-	bool TryQueueAsync(Func<CancellationToken, ValueTask> item);
-	
-	bool TryDequeueAsync(out Func<CancellationToken, ValueTask>? item);
+    ValueTask QueueAsync(Func<CancellationToken, ValueTask> item, CancellationToken cancellationToken);
+
+    ValueTask<Func<CancellationToken, ValueTask>> DequeueAsync(CancellationToken cancellationToken);
+
+    bool TryQueueAsync(Func<CancellationToken, ValueTask> item);
+
+    bool TryDequeueAsync(out Func<CancellationToken, ValueTask>? item);
 }
