@@ -41,11 +41,11 @@ public class UrlProducerWorker : BackgroundService
         {
             //var urls = UrlsHelper.GetFromFaker();
             var urls = UrlsHelper.GetFromCsv(page);
-            var urlsText = string.Join(",", urls.Take(100));
+            var urlsToLog = urls.Take(100);
 
-            _logger.Log(typeof(UrlProducerWorker), "Sending...: {urls}", [urlsText]);
+            _logger.Log(typeof(UrlProducerWorker), "Sending...: {urls}", [urlsToLog]);
             await _urlHub.Clients.All.OnAddUrls(urls); // DateTime.Now
-            _logger.Log(typeof(UrlProducerWorker), "...Sent: {urls}", [urlsText]);
+            _logger.Log(typeof(UrlProducerWorker), "...Sent: {urls}", [urlsToLog]);
 
             page++;
 

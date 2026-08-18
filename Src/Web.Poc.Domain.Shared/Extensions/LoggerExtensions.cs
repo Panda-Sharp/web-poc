@@ -9,18 +9,12 @@ public static class LoggerExtensions
 {
     private static void Log(this ILogger logger, string message)
     {
-        if (logger.IsEnabled(LogLevel.Information))
-        {
-            logger.LogInformation($"{DateTime.Now}: {message}");
-        }
+        logger.LogInformation(message);
     }
 
     private static void Log(this ILogger logger, string message, params object[] args)
     {
-        if (logger.IsEnabled(LogLevel.Information))
-        {
-            logger.LogInformation($"{DateTime.Now}: {message}", args);
-        }
+        logger.LogInformation(message, args);
     }
 
     public static void Log(

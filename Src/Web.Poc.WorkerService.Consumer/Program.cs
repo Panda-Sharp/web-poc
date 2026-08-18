@@ -15,6 +15,7 @@ public class Program
         var builder = Host.CreateApplicationBuilder(args);
 
         builder.Services.AddApplication(builder.Configuration);
+        builder.Services.AddApplicationLogging(builder.Configuration);
 
         builder.Services.AddSingleton<IItemQueue<Uri>, ItemQueue<Uri>>();
         builder.Services.AddHostedService<UrlConsumerWorker>();

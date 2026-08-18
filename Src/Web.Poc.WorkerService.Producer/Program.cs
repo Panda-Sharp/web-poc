@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Web.Poc.Application.Contracts;
+using Web.Poc.Domain.Shared.Extensions;
 using Web.Poc.WorkerService.Producer.Hubs;
 using Web.Poc.WorkerService.Producer.Workers;
 
@@ -11,6 +12,8 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+
+        builder.Services.AddApplicationLogging(builder.Configuration);
 
         builder.Services.AddSignalR();
         builder.Services.AddHostedService<UrlProducerWorker>();
