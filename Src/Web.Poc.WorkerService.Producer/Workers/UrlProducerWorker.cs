@@ -6,7 +6,6 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Web.Poc.Application.Contracts;
-using Web.Poc.Domain.Shared.Extensions;
 using Web.Poc.WorkerService.Producer.Helpers;
 using Web.Poc.WorkerService.Producer.Hubs;
 
@@ -27,7 +26,14 @@ public class UrlProducerWorker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken cancellationToken)
     {
-        _logger.Log(typeof(UrlProducerWorker), "Is running ...");
+        _logger.LogInformation("UrlProducerWorker Is waiting for a client ...");
+
+        while (!UrlHub.IsConnected)
+        {
+            await Task.Delay(100, cancellationToken);
+        }
+
+        _logger.LogInformation("UrlProducerWorker Is running ...");
 
         await TrySendUrlsAsync(cancellationToken);
     }
@@ -39,16 +45,16 @@ public class UrlProducerWorker : BackgroundService
 
         while (!cancellationToken.IsCancellationRequested)
         {
-            //var urls = UrlsHelper.GetFromFaker();
             var urls = UrlsHelper.GetFromCsv(page);
-            var urlsToLog = urls.Take(100);
+            var urlsToLog = urls.Take(100).ToArray();
 
-            _logger.Log(typeof(UrlProducerWorker), "Sending...: {urls}", [urlsToLog]);
+            _logger.LogInformation("Sending...: {urls}", urlsToLog);
             await _urlHub.Clients.All.OnAddUrls(urls); // DateTime.Now
-            _logger.Log(typeof(UrlProducerWorker), "...Sent: {urls}", [urlsToLog]);
+            _logger.LogInformation("...Sent: {urls}", urlsToLog);
 
             page++;
 
+            // this is to simulate batch of urls sent at diffent time
             await Task.Delay(rnd.Next(500, 1500), cancellationToken);
         }
     }

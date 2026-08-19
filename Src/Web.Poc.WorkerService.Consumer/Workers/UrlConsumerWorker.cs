@@ -6,8 +6,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Web.Poc.Application.Contracts;
-using Web.Poc.Domain.Shared.Extensions;
-using Web.Poc.Domain.Shared.Queue;
+using Web.Poc.Infrastructure.Queue;
 
 namespace Web.Poc.WorkerService.Consumer.Workers;
 
@@ -25,7 +24,7 @@ public class UrlConsumerWorker : BackgroundService, IUrl
         _logger = logger;
 
         _connection = new HubConnectionBuilder()
-            .WithUrl(AppConstants.HubConsumerUrl)
+            .WithUrl(AppConstants.HubConnection)
             .Build();
 
         _connection.On<IEnumerable<string>>(AppConstants.UrlSentEvent, OnAddUrls);
@@ -33,7 +32,7 @@ public class UrlConsumerWorker : BackgroundService, IUrl
 
     protected override async Task ExecuteAsync(CancellationToken cancellationToken)
     {
-        _logger.Log(typeof(UrlConsumerWorker), "Is running...");
+        _logger.LogInformation("UrlConsumerWorker Is running...");
 
         await TryToConnectAsync(cancellationToken);
     }
@@ -45,9 +44,12 @@ public class UrlConsumerWorker : BackgroundService, IUrl
         {
             try
             {
-                _logger.Log(typeof(UrlConsumerWorker), "Connecting...");
+                _logger.LogInformation("Connecting...");
+                // TODO: There can be case when connection dropped and requires reconnect.
+                // Not sure if start covers it (don't think so),
+                // so it's worth to check if reconnect logic is required too.
                 await _connection.StartAsync(cancellationToken);
-                _logger.Log(typeof(UrlConsumerWorker), "...Connected");
+                _logger.LogInformation("...Connected");
                 break;
             }
             catch
@@ -61,12 +63,12 @@ public class UrlConsumerWorker : BackgroundService, IUrl
     {
         foreach (var url in urls)
         {
-            _logger.Log(typeof(UrlConsumerWorker), "Adding...: {url}", [url]);
-            if (Uri.TryCreate(url, UriKind.Absolute, out var uri))
+            _logger.LogInformation("Adding...: {url}", url);
+            if (Uri.TryCreate(url, UriKind.RelativeOrAbsolute, out var uri))
             {
                 _ = _urlQueue.QueueAsync(uri, CancellationToken.None);
             }
-            _logger.Log(typeof(UrlConsumerWorker), "...Added: {url}", [url]);
+            _logger.LogInformation("...Added: {url}", url);
         }
     }
 }

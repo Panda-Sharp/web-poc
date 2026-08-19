@@ -11,7 +11,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Web.Poc.Application.Contracts\Web.Poc.Application.Contracts.csproj" />
-	  <ProjectReference Include="..\Web.Poc.Application\Web.Poc.Application.csproj" />
+		<ProjectReference Include="..\Web.Poc.Application.Contracts\Web.Poc.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Web.Poc.Application\Web.Poc.Application.csproj" />
+		<ProjectReference Include="..\Web.Poc.Infrastructure\Web.Poc.Infrastructure.csproj" />
 	</ItemGroup>
 </Project>

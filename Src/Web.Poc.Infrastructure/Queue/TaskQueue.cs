@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 
-namespace Web.Poc.Domain.Shared.Queue;
+namespace Web.Poc.Infrastructure.Queue;
 
 // https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1
 // https://learn.microsoft.com/en-us/dotnet/standard/collections/thread-safe/blockingcollection-overview

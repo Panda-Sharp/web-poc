@@ -31,3 +31,11 @@ For the sake of semplicty I used `SignalR`, but in a real scenario we should use
 - The type of channel created is `Bounded`, it means has Capacity Limit, it defaults to `100` but can be set in the `consumer appsettings`
 - If there `_urlDownloadTaskQueue` has capacity, a new url from `_urlQueue` is added, and `DownloadUrlAsync` is added to the queue
 - All the `DownloadUrlAsync` tasks are exectude in parallel and the page downloaded in the `consumer/Downloads` folder
+
+## TODO
+
+- Make sure eeverything works end to end without mocks, randoms, fake delayes, etc.
+- Add simple EF + SQLite for download attempts storing (url, attmepts, status, success, output path, etc) or even Redis that can be used for data persistency and replace SignalR by pub/sub (Redis Streams)
+- Add retries with exponential backoff for unsuccessful attempts as it's really beneficial for HTTP-focused projects.
+- Docker compose to run workers and Redis
+- Reorganize and cleanup files and projects

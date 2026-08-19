@@ -16,3 +16,6 @@
   </ItemGroup>
 
 </Project>
+
+<!-- TODO: delete all empty projects if not used 
+or add explamation to README about their possible purpose in the future -->

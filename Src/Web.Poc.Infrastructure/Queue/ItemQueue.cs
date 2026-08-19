@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 
-namespace Web.Poc.Domain.Shared.Queue;
+namespace Web.Poc.Infrastructure.Queue;
 
 public class ItemQueue<T> : IItemQueue<T> where T : class
 {

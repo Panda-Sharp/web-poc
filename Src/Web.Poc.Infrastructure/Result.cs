@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Web.Poc.Domain.Shared;
+namespace Web.Poc.Infrastructure;
 
 public class Result<T>
 {

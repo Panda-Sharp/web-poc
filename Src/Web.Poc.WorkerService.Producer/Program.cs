@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Web.Poc.Application.Contracts;
-using Web.Poc.Domain.Shared.Extensions;
+using Web.Poc.Infrastructure.Extensions;
 using Web.Poc.WorkerService.Producer.Hubs;
 using Web.Poc.WorkerService.Producer.Workers;
 
@@ -13,14 +13,14 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddApplicationLogging(builder.Configuration);
+        builder.Services.AddSerilog(builder.Configuration);
 
         builder.Services.AddSignalR();
         builder.Services.AddHostedService<UrlProducerWorker>();
 
         var app = builder.Build();
 
-        app.MapHub<UrlHub>(AppConstants.HubProducerUrl);
+        app.MapHub<UrlHub>(AppConstants.HubPath);
 
         app.Run();
     }

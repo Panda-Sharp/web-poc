@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Web.Poc.Domain.Shared\Web.Poc.Domain.Shared.csproj" />
     <ProjectReference Include="..\Web.Poc.Domain\Web.Poc.Domain.csproj" />
   </ItemGroup>
 

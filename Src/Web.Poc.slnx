@@ -2,7 +2,6 @@
   <Folder Name="/Core/">
     <Project Path="Web.Poc.Application.Contracts/Web.Poc.Application.Contracts.csproj" Id="ea12a946-f23f-4eb9-8923-1762117a3dbb" />
     <Project Path="Web.Poc.Application/Web.Poc.Application.csproj" Id="bdae415e-d19e-4e39-99e9-be00be45b776" />
-    <Project Path="Web.Poc.Domain.Shared/Web.Poc.Domain.Shared.csproj" Id="03537f89-f6b8-4e63-9488-637c87bb279d" />
     <Project Path="Web.Poc.Domain/Web.Poc.Domain.csproj" Id="9014b8a4-783f-4ab4-946a-ff6f962ad471" />
   </Folder>
   <Folder Name="/Docs/">

@@ -23,7 +23,9 @@ public static class UrlsHelper
 
     public static IEnumerable<string> GetFromCsv(int page)
     {
-        using var reader = new StreamReader("Assets/UrlLists/aams.csv");
+        string cwd = Directory.GetCurrentDirectory();
+        var filePath = Path.Combine(cwd, "Assets", "UrlLists", "global.csv");
+        using var reader = new StreamReader(filePath);
         using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
         var urls = csv.GetRecords<UrlDto>()
             .Skip((page - 1) * PageSize)

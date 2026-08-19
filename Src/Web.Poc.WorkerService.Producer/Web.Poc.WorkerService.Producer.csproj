@@ -12,6 +12,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Web.Poc.Application.Contracts\Web.Poc.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Web.Poc.Infrastructure\Web.Poc.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>
