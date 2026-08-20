@@ -1,0 +1,16 @@
+services:
+  consumer:
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - REDIS_CONNECTION_STRING=redis:6379
+
+  producer:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - REDIS_CONNECTION_STRING=redis:6379
+    ports:
+      - "8080"
+    # - ./.volumes/sql/data:/var/opt/mssql/data
+

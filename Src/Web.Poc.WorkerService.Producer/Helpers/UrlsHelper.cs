@@ -21,10 +21,10 @@ public static class UrlsHelper
             .ToArray();
     }
 
-    public static IEnumerable<string> GetFromCsv(int page)
+    public static IEnumerable<string> GetFromCsv(int page, string fileName)
     {
         string cwd = Directory.GetCurrentDirectory();
-        var filePath = Path.Combine(cwd, "Assets", "UrlLists", "global.csv");
+        var filePath = Path.Combine(cwd, "Assets", "UrlLists", fileName);
         using var reader = new StreamReader(filePath);
         using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
         var urls = csv.GetRecords<UrlDto>()

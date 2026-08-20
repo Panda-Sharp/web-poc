@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Web.Poc.Application.Contracts
+namespace Web.Poc.Application.Contracts;
+
+public interface IUrlDowloadService
 {
-    public interface IUrlDowloadService
-    {
-        Task DownloaFile(Uri uri);
-    }
+    Task DownloaFile(Uri uri);
 }

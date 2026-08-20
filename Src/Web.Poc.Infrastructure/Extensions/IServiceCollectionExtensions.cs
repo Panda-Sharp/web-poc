@@ -3,7 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
-using Web.Poc.Infrastructure.Queue;
 
 namespace Web.Poc.Infrastructure.Extensions;
 
@@ -31,16 +30,5 @@ public static class IServiceCollectionExtensions
             .AddLogging(loggingBuilder => loggingBuilder
             .ClearProviders()
             .AddSerilog(dispose: true));
-    }
-
-    public static void AddTaskQueue(this IServiceCollection services, IConfiguration configuration)
-    {
-        if (!int.TryParse(configuration["QueueCapacity"], out var queueCapacity))
-        {
-            queueCapacity = 99;
-        }
-
-        services
-            .AddSingleton<ITaskQueue>(_ => new TaskQueue(queueCapacity));
     }
 }

@@ -1,9 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using Web.Poc.Application.Extensions;
 using Web.Poc.Infrastructure.Extensions;
-using Web.Poc.Infrastructure.Queue;
+using Web.Poc.WorkerService.Consumer.Services;
 using Web.Poc.WorkerService.Consumer.Workers;
 
 namespace Web.Poc.WorkerService.Consumer;
@@ -16,12 +15,10 @@ public class Program
 
         builder.Services.AddApplication(builder.Configuration);
         builder.Services.AddSerilog(builder.Configuration);
+        builder.Services.AddRedisPubSub(builder.Configuration);
 
-        builder.Services.AddSingleton<IItemQueue<Uri>, ItemQueue<Uri>>();
+        builder.Services.AddSingleton<IConsumerService, ConsumerService>();
         builder.Services.AddHostedService<UrlConsumerWorker>();
-
-        builder.Services.AddTaskQueue(builder.Configuration);
-        builder.Services.AddHostedService<UrlMonitorWorker>();
         builder.Services.AddHostedService<UrlMonitorWorker>();
         builder.Services.AddHostedService<UrlDownloaderWorker>();
 

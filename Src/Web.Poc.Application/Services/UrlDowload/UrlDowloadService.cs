@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Web.Poc.Application.Contracts;
 
-namespace Web.Poc.Application;
+namespace Web.Poc.Application.Services.UrlDowload;
 
 public class UrlDowloadService : IUrlDowloadService
 {

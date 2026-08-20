@@ -1,0 +1,29 @@
+services:
+
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  consumer:
+    container_name: consumer
+    hostname: consumer
+    image: consumer
+    build:
+      context: .
+      dockerfile: Web.Poc.WorkerService.Consumer/Dockerfile
+    depends_on:
+      - redis
+
+  producer:
+    container_name: producer
+    hostname: producer
+    image: producer
+    build:
+      context: .
+      dockerfile: Web.Poc.WorkerService.Producer/Dockerfile
+    depends_on:
+      - redis
+

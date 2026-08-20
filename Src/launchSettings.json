@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "web.poc.workerservice.consumer": "StartDebugging",
+        "web.poc.workerservice.producer": "StartDebugging"
+      }
+    }
+  }
+}

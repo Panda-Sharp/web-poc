@@ -4,38 +4,46 @@
 
 Create a program to download multiple web pages asynchronously. 
 
+
 ## Implementation
 
-I decided to simulate a potential real world case scenario with a producer and a consumer
+I decided to simulate a potential real world case scenario with a producer (Web.Poc.WorkerService.Producer) and a consumer (Web.Poc.WorkerService.Producer)
+
 
 ### Messaging
 
-For the sake of semplicty I used `SignalR`, but in a real scenario we should use RabbitMq, Kafka...
+For the sake of semplicty I used `Redis Streams` with `Consumer Groups`, but in a real world scenario we should use RabbitMQ, Kafka, Azure Event Hub...
 
 ### Producer
 
-- I simulated a case where 100/1000 urls per time are sent from the producer, the amount can be set in `Web.Poc.WorkerService.Producer\Helpers\UrlsHelper.cs`
-- The urls can be generate from a `Faker` or from csv files in `Web.Poc.WorkerService.Producer\Assets\UrlLists\` ([csv source](https://github.com/citizenlab/test-lists)) this can be choosed in `UrlProducerWorker/TrySendUrlsAsync()`
+- I simulated a case where a list of urls from csv files, in `Web.Poc.WorkerService.Producer\Assets\UrlLists\` 
+([csv source](https://github.com/citizenlab/test-lists)), are sent from the `Producer`.  
+- The csv file can be configured in `Web.Poc.WorkerService.Producer\appsettings.json` in the `UrlFileName` property
 
 ### Consumers
 
 #### UrlConsumerWorker
 
-- It reads from `SignalR Hub` the urls sent from the `Producer` and add them to `_urlQueue` typeof `IItemQueue` (that under the hood use a `Channel`, choosed over `concurrentqueue` and `blockingcollection` for perfomance reasons)
-- The type of channel created is `Unbounded`, it means has no Capacity Limit, in a real world scenario we should use a db or a cache (eg. redis) where we update the status (success, pending, failed) of every url
-- `OnAddUrls` is called everytime a new list of urls arrive, it checks if they're valid urls and the're added to _urlQueue in background without blocking the thread
+- It reads from `Redis Streams` the urls sent from the `Producer` with `urls:new` key
+- If they're valid urls are added to `Redis Streams` with `urls:pending` key otherwise with `urls:invalid` key
+
+### UrlMonitorWorker
+
+- It reads from `Redis Streams` the urls with `urls:pending` key
+- If the `_channel` has capacity are added to it, the channel works as a queue system for the conncurrent downloads, he type of channel created is `Bounded`, it means has Capacity Limit, 
+the amoun can be configured in `Web.Poc.WorkerService.Consumer\appsettings.json` in the `QueueCapacity` property
 
 #### UrlDownloaderWorker
 
-- It reads from `_urlQueue` and try to add to `_urlDownloadTaskQueue` typeof `ITaskQueue` (that under the hood use a `Channel`, choosed over `concurrentqueue` and `blockingcollection` for perfomance reasons)
-- The type of channel created is `Bounded`, it means has Capacity Limit, it defaults to `100` but can be set in the `consumer appsettings`
-- If there `_urlDownloadTaskQueue` has capacity, a new url from `_urlQueue` is added, and `DownloadUrlAsync` is added to the queue
-- All the `DownloadUrlAsync` tasks are exectude in parallel and the page downloaded in the `consumer/Downloads` folder
+- Reads from `_channel`, and if there is any url, it's added to `DownloadUrlAsync`, 
+tasks are executed in parallel and the urls are downloaded in the `Web.Poc.WorkerService.Consumer/Downloads` folder
 
-## TODO
+###  Web.Poc.Persistence
 
-- Make sure eeverything works end to end without mocks, randoms, fake delayes, etc.
-- Add simple EF + SQLite for download attempts storing (url, attmepts, status, success, output path, etc) or even Redis that can be used for data persistency and replace SignalR by pub/sub (Redis Streams)
-- Add retries with exponential backoff for unsuccessful attempts as it's really beneficial for HTTP-focused projects.
-- Docker compose to run workers and Redis
-- Reorganize and cleanup files and projects
+Is currently empty but should be use for a potential db, for example EF with sql server for download attempts storing (url, attmepts, status, success, output path, etc) 
+
+## Build And Run
+
+1. Open the CLI, go to the src directory and run `docker compose up`
+2. Check `Producer` port, e.g. `55119` and open the browser to `http://localhost:55119/swagger/index.html`
+3. Run `/api/publish` endpoint to run the simulation

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Web.Poc.Application.Contracts;
+using Microsoft.Extensions.Hosting;
+using Web.Poc.Application.Extensions;
 using Web.Poc.Infrastructure.Extensions;
-using Web.Poc.WorkerService.Producer.Hubs;
-using Web.Poc.WorkerService.Producer.Workers;
+using Web.Poc.WorkerService.Producer.Services;
 
 namespace Web.Poc.WorkerService.Producer;
 
@@ -15,12 +15,22 @@ public class Program
 
         builder.Services.AddSerilog(builder.Configuration);
 
-        builder.Services.AddSignalR();
-        builder.Services.AddHostedService<UrlProducerWorker>();
+        builder.Services.AddControllers();
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
+        builder.Services.AddRedisPubSub(builder.Configuration);
+
+        builder.Services.AddScoped<IProducerService, ProducerService>();
 
         var app = builder.Build();
 
-        app.MapHub<UrlHub>(AppConstants.HubPath);
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+        }
+
+        app.MapControllers();
 
         app.Run();
     }
